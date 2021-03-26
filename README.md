@@ -12,12 +12,12 @@
 <ul>BrowserSync</ul>
 
 # Consolidando Conhecimento Sobre
-<ul>Selecionar elementos com <em>querySelector & querySelectorAll</em></ul>
-<ul>Ouvir eventos com <em>addEventListener</em></ul>
+<ul>Selecionar elementos com <em><strong>querySelector & querySelectorAll</strong></em></ul>
+<ul>Ouvir eventos com <em><strong>addEventListener</strong></em></ul>
 <ul>Funções Anonimas e Funções Nomeadas</ul>
-<ul>Criar elementos com <em>.createElement()</em></ul>
-<ul>Adicionar e Remover classes de elementos com <em>.classList.Add() & .classList.Remove()</ul>
-<ul>Atribuir o "pai" de um elemento com <em>appendChild()</em></ul>
+<ul>Criar elementos com <em><strong>.createElement()</strong></em></ul>
+<ul>Adicionar e Remover classes de elementos com <em><strong>.classList.Add() & .classList.Remove()</strong></ul>
+<ul>Atribuir o "pai" de um elemento com <em><strong>appendChild()</strong></em></ul>
 <ul>Como fazer requisições assincronas com JavaScript</ul>
 
 # Obervação
