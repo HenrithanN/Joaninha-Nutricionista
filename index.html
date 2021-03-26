@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Titulo da aba Errado, apenas para ser alterado com o JavaScript-->
+		<title>fsafsdfsdfsdfs</title>
+		<!--Icone da Aba de navegacao-->
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!--Importando Arquivos CSS-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+<!--Cabecalho-->
+		<header>
+			<div class="container">
+				<!--Titulo errado apenas para se alterado com o JavaScript-->
+				<h1>fsadfopasfs</h1>
+			</div>
+		</header>
+		<!--Conteudo-->
+		<main>
+			<!--Section Meus Pacientes-->
+			<section class="container">
+				<h2>Meus pacientes</h2>
+				<!--Tabela-->
+				<label for="filtro" class="label-filtro">Filtro:</label>
+				<input id="filtro" type="text" class="filtro-tabela" placeholder="Digite o Nome do Paciente">
+				<table>
+					<!--Cabecalho da Tabela-->
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Peso(kg)</th>
+							<th>Altura(m)</th>
+							<th>Gordura Corporal(%)</th>
+							<th>IMC</th>
+						</tr>
+					</thead>
+					<!--Corpo da Tabela-->
+					<tbody id="tabela-pacientes">
+						<!--Linha 01-->
+						<tr class="paciente">
+							<!--Colunas-->
+							<td class="info-nome">Paulo</td>
+							<td class="info-peso">100</td>
+							<td class="info-altura">2.00</td>
+							<td class="info-gordura">10</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<!--Linha 02-->
+						<tr class="paciente">
+							<!--Colunas-->
+							<td class="info-nome">João</td>
+							<td class="info-peso">80</td>
+							<td class="info-altura">1.72</td>
+							<td class="info-gordura">40</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<!--Linha 03-->
+						<tr class="paciente">
+							<!--Colunas-->
+							<td class="info-nome">Erica</td>
+							<td class="info-peso">54</td>
+							<td class="info-altura">12.64</td>
+							<td class="info-gordura">14</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<!--Linha 04-->
+						<tr class="paciente">
+							<!--Colunas-->
+							<td class="info-nome">Douglas</td>
+							<td class="info-peso">1085</td>
+							<td class="info-altura">1.73</td>
+							<td class="info-gordura">24</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<!--Linha 05-->
+						<tr class="paciente">
+							<!--Colunas-->
+							<td class="info-nome">Tatiana</td>
+							<td class="info-peso">1046</td>
+							<td class="info-altura">12.55</td>
+							<td class="info-gordura">19</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<!--Linha 06-->
+						<tr class="paciente">
+							<!--Colunas-->
+							<td class="info-nome">Calos</td>
+							<td class="info-peso">106</td>
+							<td class="info-altura">1.55</td>
+							<td class="info-gordura">29</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<!--Linha 07-->
+						<tr class="paciente">
+							<!--Colunas-->
+							<td class="info-nome">Jose</td>
+							<td class="info-peso">96</td>
+							<td class="info-altura">1.75</td>
+							<td class="info-gordura">29</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<!--Linha 08-->
+						<tr class="paciente">
+							<!--Colunas-->
+							<td class="info-nome">Joana</td>
+							<td class="info-peso">70</td>
+							<td class="info-altura">1.65</td>
+							<td class="info-gordura">10</td>
+							<td class="info-imc">0</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="container-buscar-pacientes">
+					<button id="buscar-pacientes">Buscar Pacientes</button>
+					<span id="erro-requisicao"class="invisivel">Erro ao buscar os pacientes!</span>
+
+				</div>
+			</section>
+			<!--Section Formulario-->
+			<section class="container">
+				<!--Titulo do Formulario-->
+				<h2 id="titulo-form">Adicionar novo paciente</h2>
+				<!--Formulario-->
+				<ul class="alerta-erro"id="mensagens-erro">
+				</ul>
+				<form id="form-adicionar">
+					<div>
+						<label for="nome">Nome:</label>
+						<input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
+					</div>
+					<div class="grupo">
+						<label for="peso">Peso:</label>
+						<input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="altura">Altura:</label>
+						<input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="gordura">% de Gordura:</label>
+						<input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
+					</div>
+			
+					<button id="adicionar-paciente">Adicionar</button>
+				</form>
+			</section>
+		</main>
+
+		<!--Importando Arquivo JavaScript-->
+		<!--É uma boa pratica, e recomendado importar arquivos
+		JavaScript, sempre no final da Página, pois serao os ultimos
+		a serem carregados.-->
+		<script src="js/calculo-imc.js"></script>
+		<script src="js/form.js"></script>
+		<script src="js/remover-paciente.js"></script>
+		<script src="js/filtro.js"></script>
+		<script src="js/buscar-pacientes.js"></script>
+	</body>
+</html>
